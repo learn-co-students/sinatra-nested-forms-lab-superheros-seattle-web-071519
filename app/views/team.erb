@@ -1,3 +1,15 @@
-
-
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1><%= @team_name %></h1>
+        <h2>Team Motto: <%= @team_motto %></h2>
+        <div class="heroes">
+            <% @team_members.each_with_index do |team_member, index| %>
+                <h2>Hero Name: <%= @names[index] %></h2>
+                <p>Hero Power: <%= @powers[index] %></p>
+                <p>Hero Biography: <%= @bios[index] %></p>
+            <% end %>
+        </div>
+    </body>
+</html>
 
